@@ -1,350 +1,378 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-color: #fada5e;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
+    background-color: #fada5e;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
 }
 
+
 /*animation starts here*/
+
+
 /*nakalagay dito paano mapapagalaw, mawawala at mapapalabas 
 yung mga bubbles*/
+
 .animation .bubble {
-  position: absolute;
-  background-color: #ffffe0;
-  border: 0.2em solid #ffffe0;
-  border-radius: 50%;
-  width: 5em;
-  height: 5em;
+    position: absolute;
+    background-color: #ffffe0;
+    border: 0.2em solid #ffffe0;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
 }
 
 .animation .bubble:nth-child(1) {
-  animation: animate 10s linear infinite;
-  top: 12%;
-  left: 42%;
+    animation: animate 10s linear infinite;
+    top: 12%;
+    left: 42%;
 }
 
 .animation .bubble:nth-child(2) {
-  animation: animate 7s linear infinite;
-  top: 70%;
-  left: 50%;
+    animation: animate 7s linear infinite;
+    top: 70%;
+    left: 50%;
 }
 
 .animation .bubble:nth-child(3) {
-  animation: animate 9s linear infinite;
-  top: 17%;
-  left: 6%;
+    animation: animate 9s linear infinite;
+    top: 17%;
+    left: 6%;
 }
 
 .animation .bubble:nth-child(4) {
-  animation: animate 10s linear infinite;
-  top: 20%;
-  left: 60%;
+    animation: animate 10s linear infinite;
+    top: 20%;
+    left: 60%;
 }
 
 .animation .bubble:nth-child(5) {
-  animation: animate 6s linear infinite;
-  top: 67%;
-  left: 10%;
+    animation: animate 6s linear infinite;
+    top: 67%;
+    left: 10%;
 }
 
 .animation .bubble:nth-child(6) {
-  animation: animate 12s linear infinite;
-  top: 80%;
-  left: 70%;
+    animation: animate 12s linear infinite;
+    top: 80%;
+    left: 70%;
 }
 
 .animation .bubble:nth-child(7) {
-  animation: animate 15s linear infinite;
-  top: 60%;
-  left: 80%;
+    animation: animate 15s linear infinite;
+    top: 60%;
+    left: 80%;
 }
 
 .animation .bubble:nth-child(8) {
-  animation: animate 16s linear infinite;
-  top: 32%;
-  left: 25%;
+    animation: animate 16s linear infinite;
+    top: 32%;
+    left: 25%;
 }
 
 .animation .bubble:nth-child(9) {
-  animation: animate 9s linear infinite;
-  top: 90%;
-  left: 25%;
+    animation: animate 9s linear infinite;
+    top: 90%;
+    left: 25%;
 }
 
 .animation .bubble:nth-child(10) {
-  animation: animate 5s linear infinite;
-  top: 20%;
-  left: 80%;
+    animation: animate 5s linear infinite;
+    top: 20%;
+    left: 80%;
 }
 
 .animation .bubble:nth-child(11) {
-  animation: animate 13s linear infinite;
-  top: 90%;
-  left: 40%;
+    animation: animate 13s linear infinite;
+    top: 90%;
+    left: 40%;
 }
 
 .animation .bubble:nth-child(12) {
-  animation: animate 3s linear infinite;
-  top: 90%;
-  left: 20%;
+    animation: animate 3s linear infinite;
+    top: 90%;
+    left: 20%;
 }
 
 .animation .bubble:nth-child(13) {
-  animation: animate 5s linear infinite;
-  top: 90%;
-  left: 80%;
+    animation: animate 5s linear infinite;
+    top: 90%;
+    left: 80%;
 }
 
 @keyframes animate {
-  0% {
-    transform: scale(0) translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.3) translateY(-40em);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3) translateY(-40em);
+        opacity: 0;
+    }
 }
+
+
 /*animation ends here*/
 
 .selection-1,
 .selection-3 {
-  cursor: pointer;
-  color: #383838;
-  border: 0.2em solid #1d2951;
-  padding: 0.3em;
-  border-radius: 1em;
-  margin-top: 1em;
-  margin-left: 1em;
-  width: 19.5em;
+    cursor: pointer;
+    color: #383838;
+    border: 0.2em solid #1d2951;
+    padding: 0.3em;
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 19.5em;
 }
 
 .selection-2 {
-  cursor: pointer;
-  color: #383838;
-  border: 0.2em solid #1d2951;
-  padding: 0.3em;
-  border-radius: 1em;
-  margin-top: 1em;
-  margin-left: 30em;
-  width: 19.5em;
+    cursor: pointer;
+    color: #383838;
+    border: 0.2em solid #1d2951;
+    padding: 0.3em;
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-left: 30em;
+    width: 19.5em;
 }
 
 .selection-1 {
-  background-color: #fada5e;
+    background-color: #fada5e;
 }
 
 .selection-2 {
-  background-color: #fa8072;
+    background-color: #fa8072;
 }
 
 .selection-3 {
-  background-color: #dda0dd;
+    background-color: #dda0dd;
 }
 
 .title-h1 {
-  margin-left: 5em;
-  color: #1d2951;
+    margin-left: 5em;
+    color: #1d2951;
 }
 
 .circle,
 .temperature,
 .rectangle,
 .triangle {
-  display: inline-block;
+    display: inline-block;
 }
 
 .selection-1,
 .selection-2,
 .selection-3,
-.about,
+.body,
 .title-h1,
 .answer,
 input[type="number"],
 input[type="reset"],
 input[type="submit"],
 .bottom {
-  font-family: "Fredoka", sans-serif;
+    font-family: "Fredoka", sans-serif;
 }
 
+
 /*tab part*/
+
+
 /*additional design, nakagoogle tab design para mas madaling mapuntahan
 yung ibang calculator, nakalagay din yung effect na pataas para madali makita anong
 tab ang napoint ng cursor*/
+
 .bookmark_0,
 .bookmark_1,
 .bookmark_2,
 .bookmark_3 {
-  cursor: pointer;
-  display: inline-block;
-  position: absolute;
-  border: 0.2em solid #1d2951;
-  top: -7%;
-  width: 16em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    border: 0.2em solid #1d2951;
+    top: -7%;
+    width: 16em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .bookmark_1,
 .bookmark_2,
 .bookmark_3 {
-  transition: 1.5s;
+    transition: 1.5s;
 }
 
 .bookmark_1:hover,
 .bookmark_2:hover,
 .bookmark_3:hover {
-  transform: translateY(-1.6em);
+    transform: translateY(-1.6em);
 }
 
 ul a li {
-  color: #1d2951;
-  text-decoration: none;
-  margin-left: 2em;
+    color: #1d2951;
+    text-decoration: none;
+    margin-left: 2em;
 }
 
 .bookmark_0 {
-  background-color: #f5f5f5;
-  z-index: 50;
-  height: 1.6em;
-  left: -0.2em;
+    background-color: #f5f5f5;
+    z-index: 50;
+    height: 1.6em;
+    left: -0.2em;
 }
 
 .bookmark_1 {
-  background-color: #90ee90;
-  z-index: 40;
-  height: 1.6em;
-  left: 10%;
+    background-color: #90ee90;
+    z-index: 40;
+    height: 1.6em;
+    left: 10%;
 }
 
 .bookmark_2 {
-  background-color: #fa8072;
-  z-index: 30;
-  height: 1.6em;
-  left: 20%;
+    background-color: #fa8072;
+    z-index: 30;
+    height: 1.6em;
+    left: 20%;
 }
 
 .bookmark_3 {
-  background-color: #dda0dd;
-  z-index: 20;
-  height: 1.6em;
-  left: 30%;
+    background-color: #dda0dd;
+    z-index: 20;
+    height: 1.6em;
+    left: 30%;
 }
+
+
 /*tab ends here*/
 
-.about {
-  display: inline-block;
-  position: absolute;
-  background-color: #fdfd96;
-  border: 0.2em solid #1d2951;
-  width: 75em;
-  height: 25em;
-  padding: 2em;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.body {
+    display: inline-block;
+    position: absolute;
+    background-color: #fdfd96;
+    border: 0.2em solid #1d2951;
+    width: 75em;
+    height: 25em;
+    padding: 2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .circle,
 .temperature,
 .rectangle,
 .triangle {
-  margin-top: 6em;
+    margin-top: 6em;
 }
 
 .input-section {
-  background-color: #ffffe0;
-  border: 0.2em solid #1d2951;
-  margin-top: 1.5em;
-  width: 34.4em;
+    background-color: #ffffe0;
+    border: 0.2em solid #1d2951;
+    margin-top: 1.5em;
+    width: 34.4em;
+}
+
+.answer-section {
+    display: block;
 }
 
 .answer {
-  display: block;
+    margin: 0;
+    display: block;
+    height: auto;
+    max-height: 10em;
 }
 
 input[type="number"] {
-  background-color: #ffffe0;
-  border: 0.2em solid #1d2951;
-  margin-top: 1em;
-  padding: 0.3em;
-  border-radius: 1em;
-  width: 20em;
+    background-color: #ffffe0;
+    border: 0.2em solid #1d2951;
+    margin-top: 1em;
+    padding: 0.3em;
+    border-radius: 1em;
+    width: 20em;
 }
 
 input[type="reset"],
 input[type="submit"] {
-  display: inline-block;
-  background-color: #fada5e;
-  border: 0.2em solid #1d2951;
-  padding: 0.3em;
-  margin-top: 1.5em;
-  border-radius: 1em;
+    display: inline-block;
+    background-color: #fada5e;
+    border: 0.2em solid #1d2951;
+    padding: 0.3em;
+    margin-top: 1.5em;
+    border-radius: 1em;
 }
 
 input[type="reset"] {
-  margin-left: 31.4em;
+    margin-left: 31.4em;
 }
 
 input[type="submit"] {
-  margin-left: 1.2em;
+    margin-left: 1.2em;
 }
 
+
 /*table (with formulas) part*/
+
+
 /*nagimplement ng table para mas maayos mabasa yung mga 
 formulas*/
+
 .formula {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #fada5e;
-  color: #1d2951;
-  border: 0em solid #fada5e;
-  padding: 2em;
-  margin-left: 7em;
-  margin-top: 2.8em;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fada5e;
+    color: #1d2951;
+    border: 0em solid #fada5e;
+    padding: 2em;
+    margin-left: 3em;
+    margin-top: 2.8em;
 }
 
 .formula h1 {
-  margin-left: 1.2em;
+    margin-left: 1.2em;
 }
 
 .elements {
-  display: inline-block;
-  margin-left: 10.7em;
+    display: inline-block;
+    margin-left: 10.7em;
 }
 
 .elements i {
-  width: 3em;
-  margin-bottom: 1.5em;
+    width: 3em;
+    margin-bottom: 1.5em;
 }
 
 p {
-  color: #000;
-  margin-top: 1.5em;
+    color: #000;
+    margin-top: 1.5em;
 }
 
 tr td {
-  border: 0.2em solid #1d2951;
-  width: 13em;
-  padding: 0.4em;
+    cursor: pointer;
+    border: 0.2em solid #1d2951;
+    width: 13em;
+    padding: 0.4em;
+    transition: 0.3s ease;
 }
 
 tr td:hover {
-  background-color: #ffffe0;
+    background-color: #ffffe0;
 }
+
+
 /*table ends here*/
 
 .bottom {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -90%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -90%);
 }
+
 .bottom p {
-  font-size: x-small;
+    font-size: x-small;
 }
