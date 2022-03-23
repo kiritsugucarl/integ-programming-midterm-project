@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/calculator.png">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,9 @@
 </head>
 
 <body class="whole-rec">
+    <!--
+    =====================================BACKGROUND======================================================
+    -->
     <div class="animation">
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -32,7 +35,13 @@
         <div class="bubble"></div>
     </div>
 
+    <!--
+    =========================================BODY SECTION================================================
+    -->
     <div class="body-rec">
+        <!--
+        =========================BOOKMARKS=======================
+        -->
         <div class="tabs">
             <ul>
                 <li class="bookmark_0"><a href="#"></a></li>
@@ -48,6 +57,9 @@
             </ul>
         </div>
 
+        <!--
+        =========================CALCULATOR=======================
+        -->
         <div class="rectangle" id="rectangle">
             <h1 class="title-h1">Rectangle Calculator</h1>
             <form action="" method="post">
@@ -59,11 +71,12 @@
                 <br>
                 <input type="number" placeholder="Width" name="width">
                 <br>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Calculate" name="submit">
+                <input class="button-rectangle" type="reset" value="Reset">
+                <input class="button-rectangle" type="submit" value="Calculate" name="submit">
                 <div class="input-section">
             </form>
             <?php
+            //error double check
             error_reporting(0);
             ini_set('display_errors', 0);
             if (isset($_POST['submit'])) {
@@ -82,22 +95,26 @@
                 if ($selected == "area") {
                     $answer = $val1 * $val2;
                     echo "
-                    <div class='answer-section'>
-                        <p class='answer'> The area of rectangle with length of $val1 units and width of $val2 units is : " . number_format($answer, 3, '.', ',') . " units </p>
-                    </div>    
-                    ";
+                        <div class='answer-section'>
+                            <p class='answer'> The area of rectangle with length of $val1 units and width of $val2 units is : " . number_format($answer, 3, '.', ',') . " units </p>
+                        </div>    
+                        ";
                 } elseif ($selected == "perimeter") {
                     $answer = 2 * ($val1  + $val2);
                     echo "
-                    <div class='answer-section'>
-                        <p class='answer'> The perimeter of rectangle with length of $val1 units and width of $val2 units is : " . number_format($answer, 3, '.', ',') . " units </p>
-                    </div>
-                    ";
+                        <div class='answer-section'>
+                            <p class='answer'> The perimeter of rectangle with length of $val1 units and width of $val2 units is : " . number_format($answer, 3, '.', ',') . " units </p>
+                        </div>
+                        ";
                 }
             }
             ?>
         </div>
     </div>
+
+    <!--
+    =================================FORMULA===================================
+    -->
     <div class="formula-rec">
         <div class="elements">
             <i class="fa fa-solid fa-circle"></i>
@@ -110,15 +127,19 @@
         <table class="table-formula">
             <tr>
                 <td>Perimeter of a Rectangle</td>
-                <td>P = 2 (l + b)</td>
+                <td>P = 2 (l + w)</td>
             </tr>
             <tr>
                 <td>Area of a Rectangle</td>
-                <td>A = l x b</td>
+                <td>A = l x w</td>
             </tr>
         </table>
     </div>
     </div>
+
+    <!--
+    ===================================FOOTER==========================================
+    -->
     <div class="bottom">
         <p>GREIL PROGRAMMERS | MIDTERM PROJECT 2022</p>
     </div>

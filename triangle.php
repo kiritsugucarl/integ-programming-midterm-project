@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/calculator.png">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,9 @@
 </head>
 
 <body class="whole-tri">
-    <!--animation section-->
+    <!--
+    =====================================BACKGROUND======================================================
+    -->
     <div class="animation">
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -33,13 +35,18 @@
         <div class="bubble"></div>
     </div>
 
+    <!--
+    =========================================BODY SECTION================================================
+    -->
     <div class="body-tri">
-        <!--tab section-->
+        <!--
+        =========================BOOKMARKS=======================
+        -->
         <div class="tabs">
             <ul>
                 <li class="bookmark_0"></li>
                 <a href="index.php">
-                    <li class="bookmark_1_circle"><i class="fa-regular fa-circle" aria-hidden="true"></i>Circle</li>
+                    <li class="bookmark_1_circle">Circle</li>
                 </a>
                 <a href="rectangle.php">
                     <li class="bookmark_2_rectangle">Rectangle</li>
@@ -50,14 +57,17 @@
             </ul>
         </div>
 
+        <!--
+        =========================CALCULATOR=======================
+        -->
         <div class="triangle" id="triangle">
             <h1 class="title-h1">Triangle Calculator</h1>
             <form action="" method="post">
                 <input type="number" placeholder="Base" name="base">
                 <input type="number" placeholder="Height" name="height">
                 <br>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Calculate" name="submit">
+                <input class="button-triangle" type="reset" value="Reset">
+                <input class="button-triangle" type="submit" value="Calculate" name="submit">
             </form>
             <div class="input-section">
                 <?php
@@ -82,6 +92,10 @@
                 ?>
             </div>
         </div>
+
+        <!--
+        =================================FORMULA===================================
+        -->
         <div class="formula-tria">
             <div class="elements">
                 <i class="fa fa-solid fa-circle"></i>
@@ -99,6 +113,10 @@
             </table>
         </div>
     </div>
+
+    <!--
+    ===================================FOOTER==========================================
+    -->
     <div class="bottom">
         <p>GREIL PROGRAMMERS | MIDTERM PROJECT 2022</p>
     </div>

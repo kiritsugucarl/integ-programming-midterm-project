@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
@@ -15,7 +16,9 @@
 </head>
 
 <body class="whole-temp">
-    <!--animation section-->
+    <!--
+    =====================================BACKGROUND======================================================
+    -->
     <div class="animation">
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -32,6 +35,9 @@
         <div class="bubble"></div>
     </div>
 
+    <!--
+    =========================================BODY SECTION================================================
+    -->
     <div class="body-temp">
         <!--tab section-->
         <div class="tabs">
@@ -59,8 +65,8 @@
                     <option value="ctof" name="ctof">Celsius to Fahrenheit</option>
                 </select>
                 <br>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Calculate" name="submit">
+                <input class="button-temperature" type="reset" value="Reset">
+                <input class="button-temperature" type="submit" value="Calculate" name="submit">
                 <div class="input-section">
             </form>
             <?php
@@ -79,7 +85,7 @@
                 if ($selected == "ftoc") {
                     $answer = ($val1 - 32) / 1.8;
                     echo "
-                    <div class='answer-question'>
+                    <div class='answer-section'>
                         <p class='answer'>$val1 F is " . number_format($answer, 3, '.', ',') . " Celsius</p>
                     </div>
                     ";
@@ -88,7 +94,7 @@
                 if ($selected == "ctof") {
                     $answer = ($val1 * 9 / 5) + 32;
                     echo "
-                    <div class='answer-question'>
+                    <div class='answer-section'>
                         <p class='answer'>$val1 C is " . number_format($answer, 3, '.', ',') . " Fahrenheit</p>
                     </div>
                     ";
@@ -97,6 +103,10 @@
             ?>
         </div>
     </div>
+
+    <!--
+    =================================FORMULA===================================
+    -->
     <div class="formula-temp">
         <div class="elements">
             <i class="fa fa-solid fa-circle"></i>
@@ -118,6 +128,10 @@
         </table>
     </div>
     </div>
+
+    <!--
+    ===================================FOOTER==========================================
+    -->
     <div class="bottom">
         <p>GREIL PROGRAMMERS | MIDTERM PROJECT 2022</p>
     </div>

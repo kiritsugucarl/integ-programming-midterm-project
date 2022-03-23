@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/calculator.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,9 @@
 </head>
 
 <body>
-    <!--animation section-->
+    <!--
+    =====================================BACKGROUND======================================================
+    -->
     <div class="animation">
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -32,8 +34,14 @@
         <div class="bubble"></div>
         <div class="bubble"></div>
     </div>
+
+    <!--
+    =========================================BODY SECTION================================================
+    -->
     <div class="body">
-        <!--tab section-->
+        <!--
+        =========================BOOKMARKS=======================
+        -->
         <div class="tabs">
             <ul>
                 <li class="bookmark_0"></li>
@@ -49,7 +57,9 @@
             </ul>
         </div>
 
-        <!--about circle section-->
+        <!--
+        =========================CALCULATOR=======================
+        -->
         <div class="circle" id="circle">
             <h1 class="title-h1">Circle Calculator</h1>
             <form action="" method="post">
@@ -60,8 +70,8 @@
                     <option value="diameter">Diameter</option>
                 </select>
                 <br>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Calculate" name="submit">
+                <input class="button-circle" type="reset" value="Reset">
+                <input class="button-circle" type="submit" value="Calculate" name="submit">
                 <div class="input-section">
             </form>
             <?php
@@ -103,6 +113,10 @@
             ?>
         </div>
     </div>
+
+    <!--
+    =================================FORMULA===================================
+    -->
     <div class="formula">
         <div class="elements">
             <i class="fa fa-solid fa-circle"></i>
@@ -111,24 +125,25 @@
         </div>
         <h1>Formulas Related to Circle</h1>
         <p>The Circle formulas are expressed as,</p>
-        <!--table with contents section-->
         <table class="table-formula">
             <tr>
                 <td>Diameter of a Circle</td>
-                <td>D = 2 x r</td>
+                <td>Diameter = 2 x r</td>
             </tr>
             <tr>
                 <td>Circumference of a Circle</td>
-                <td>C = 2 x π x r</td>
+                <td>Circumference = 2 x π x r</td>
             </tr>
             <tr>
                 <td>Area of a Circle</td>
-                <td>A = π x r2</td>
+                <td>Area = π x r2</td>
             </tr>
         </table>
     </div>
     </div>
-    <!--footer section-->
+    <!--
+    ===================================FOOTER==========================================
+    -->
     <div class="bottom">
         <p>GREIL PROGRAMMERS | MIDTERM PROJECT 2022</p>
     </div>
