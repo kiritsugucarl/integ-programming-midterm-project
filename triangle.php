@@ -15,7 +15,7 @@
     <title>Triangle Calculator</title>
 </head>
 
-<body>
+<body class="whole-tri">
     <!--animation section-->
     <div class="animation">
         <div class="bubble"></div>
@@ -33,19 +33,19 @@
         <div class="bubble"></div>
     </div>
 
-    <div class="body">
+    <div class="body-tri">
         <!--tab section-->
         <div class="tabs">
             <ul>
                 <li class="bookmark_0"></li>
                 <a href="index.php">
-                    <li class="bookmark_1"><i class="fa-regular fa-circle" aria-hidden="true"></i>Circle</li>
+                    <li class="bookmark_1_circle"><i class="fa-regular fa-circle" aria-hidden="true"></i>Circle</li>
                 </a>
                 <a href="rectangle.php">
-                    <li class="bookmark_2">Rectangle</li>
+                    <li class="bookmark_2_rectangle">Rectangle</li>
                 </a>
                 <a href="temperature.php">
-                    <li class="bookmark_3">Temperature</li>
+                    <li class="bookmark_3_temperature">Temperature</li>
                 </a>
             </ul>
         </div>
@@ -82,13 +82,13 @@
                 ?>
             </div>
         </div>
-        <div class="formula">
+        <div class="formula-tria">
             <div class="elements">
                 <i class="fa fa-solid fa-circle"></i>
                 <i class="fa fa-solid fa-circle"></i>
                 <i class="fa fa-solid fa-circle"></i>
             </div>
-            <h1>Formulas Related to Triangle</h1>
+            <h1 class="title-tria">Formulas Related to Triangle</h1>
             <p>The Triangle formulas are expressed as,</p>
 
             <table class="table-formula">

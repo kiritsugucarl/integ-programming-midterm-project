@@ -38,7 +38,7 @@
             <ul>
                 <li class="bookmark_0"></li>
                 <a href="rectangle.php">
-                    <li class="bookmark_1"><i class="fa-regular fa-circle" aria-hidden="true"></i>Rectangle</li>
+                    <li class="bookmark_1">Rectangle</li>
                 </a>
                 <a href="temperature.php">
                     <li class="bookmark_2">Temperature</li>

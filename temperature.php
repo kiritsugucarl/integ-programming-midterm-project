@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
-    <title>Temperature Calculator</title>
+    <title>Temperature Converter</title>
 </head>
 
-<body>
+<body class="whole-temp">
     <!--animation section-->
     <div class="animation">
         <div class="bubble"></div>
@@ -32,16 +32,16 @@
         <div class="bubble"></div>
     </div>
 
-    <div class="body">
+    <div class="body-temp">
         <!--tab section-->
         <div class="tabs">
             <ul>
                 <li class="bookmark_0"></li>
                 <a href="index.php">
-                    <li class="bookmark_1"><i class="fa-regular fa-circle" aria-hidden="true"></i>Circle</li>
+                    <li class="bookmark_1_circle">Circle</li>
                 </a>
                 <a href="rectangle.php">
-                    <li class="bookmark_2">Rectangle</li>
+                    <li class="bookmark_2_rectangle">Rectangle</li>
                 </a>
                 <a href="triangle.php">
                     <li class="bookmark_3">Triangle</li>
@@ -50,11 +50,11 @@
         </div>
 
         <!--about circle section-->
-        <div class="circle" id="circle">
-            <h1 class="title-h1"> Temperature Converter</h1>
+        <div class="temperature" id="temperature">
+            <h1 class="title-h1-temp"> Temperature Converter</h1>
             <form action="" method="post">
                 <input type="number" placeholder="Input value here" name="num">
-                <select name="options[]" id="temp" class="selection-1">
+                <select name="options[]" id="temp" class="selection-3">
                     <option value="ftoc" name="ftoc">Fahrenheit to Celsius</option>
                     <option value="ctof" name="ctof">Celsius to Fahrenheit</option>
                 </select>
@@ -97,17 +97,17 @@
             ?>
         </div>
     </div>
-    <div class="formula">
+    <div class="formula-temp">
         <div class="elements">
             <i class="fa fa-solid fa-circle"></i>
             <i class="fa fa-solid fa-circle"></i>
             <i class="fa fa-solid fa-circle"></i>
         </div>
-        <h1>Formulas Related to Temperature</h1>
-        <p>The Temperature formulas are expressed as,</p>
+        <h1 class="title-temp">Formulas Related to Temperature</h1>
+        <p class="p-temp">The Temperature formulas are expressed as,</p>
 
         <table class="table-formula">
-            <tr>
+            <tr class="tr-temp">
                 <td>Celsius to Fahrenheit</td>
                 <td>° F = 9/5 ( ° C) + 32</td>
             </tr>

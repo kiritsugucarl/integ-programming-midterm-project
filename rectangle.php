@@ -15,7 +15,7 @@
     <title>Rectangle Calculator</title>
 </head>
 
-<body>
+<body class="whole-rec">
     <div class="animation">
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -32,12 +32,12 @@
         <div class="bubble"></div>
     </div>
 
-    <div class="body">
+    <div class="body-rec">
         <div class="tabs">
             <ul>
                 <li class="bookmark_0"><a href="#"></a></li>
                 <a href="index.php">
-                    <li class="bookmark_1"><i class="fa-regular fa-circle" aria-hidden="true"></i>Circle</li>
+                    <li class="bookmark_1_circle">Circle</li>
                 </a>
                 <a href="temperature.php">
                     <li class="bookmark_2">Temperature</li>
@@ -52,7 +52,7 @@
             <h1 class="title-h1">Rectangle Calculator</h1>
             <form action="" method="post">
                 <input type="number" placeholder="Length" name="length">
-                <select name="options[]" id="circle" class="selection-3">
+                <select name="options[]" id="rectangle" class="selection-2">
                     <option value="area">Area</option>
                     <option value="perimeter">Perimeter</option>
                 </select>
@@ -98,13 +98,13 @@
             ?>
         </div>
     </div>
-    <div class="formula">
+    <div class="formula-rec">
         <div class="elements">
             <i class="fa fa-solid fa-circle"></i>
             <i class="fa fa-solid fa-circle"></i>
             <i class="fa fa-solid fa-circle"></i>
         </div>
-        <h1>Formulas Related to Rectangle</h1>
+        <h1 class="title-rec">Formulas Related to Rectangle</h1>
         <p>The Rectangle formulas are expressed as,</p>
 
         <table class="table-formula">
