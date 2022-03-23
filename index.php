@@ -55,9 +55,9 @@
             <form action="" method="post">
                 <input type="number" placeholder="Radius" name="radius">
                 <select name="options[]" id="circle" class="selection-1">
-                    <option value="area">a (area)</option>
-                    <option value="circumference">C (circumference)</option>
-                    <option value="diameter">d (diameter)</option>
+                    <option value="area">Area</option>
+                    <option value="circumference">Circumference</option>
+                    <option value="diameter">Diameter</option>
                 </select>
                 <br>
                 <input type="reset" value="Reset">

@@ -38,7 +38,7 @@
         <div class="tabs">
             <ul>
                 <li class="bookmark_0"></li>
-                <a href="circle.php">
+                <a href="index.php">
                     <li class="bookmark_1"><i class="fa-regular fa-circle" aria-hidden="true"></i>Circle</li>
                 </a>
                 <a href="rectangle.php">
@@ -66,10 +66,16 @@
                 if (isset($_POST['submit'])) {
                     $val1 = $_POST['base'];
                     $val2 = $_POST['height'];
+                    if ($val1 == null) {
+                        $val1 = 0;
+                    }
+                    if ($val2 == null) {
+                        $val2 = 0;
+                    }
                     $answer = ($val1 * $val2) / 2;
                     echo "
                     <div class='answer-section'>
-                        <p> The area of the triangle with base of $val1 units and height of $val2 units is : " . number_format($answer, 3, '.', ',') . " units </p>
+                        <p class='answer'> The area of the triangle with base of $val1 units and height of $val2 units is : " . number_format($answer, 3, '.', ',') . " units </p>
                     </div>
                     ";
                 }
@@ -87,23 +93,14 @@
 
             <table class="table-formula">
                 <tr>
-                    <td>Diameter of a Circle</td>
-                    <td>D = 2 x r</td>
-                </tr>
-                <tr>
-                    <td>Circumference of a Circle</td>
-                    <td>C = 2 x π x r</td>
-                </tr>
-                <tr>
-                    <td>Area of a Circle</td>
-                    <td>A = π x r2</td>
+                    <td>Area of a Triangle</td>
+                    <td>A = base * height / 2</td>
                 </tr>
             </table>
         </div>
     </div>
     <div class="bottom">
         <p>GREIL PROGRAMMERS | MIDTERM PROJECT 2022</p>
-        <p>i'm done...</p>
     </div>
     </div>
 </body>
